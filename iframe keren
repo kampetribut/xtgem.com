@@ -1,0 +1,11 @@
+letakkan script di bawah tag </HEAD>
+di sini script
+dengan tag <BODY>
+
+<frameset rows="*,1" framespacing="0" border="0" frameborder="NO">
+	<frame src="http://www.tnlottery.com/winningnumbers/cash4list.aspx?ch3Showall=y" name="test" scrolling="auto" noresize>
+</frameset><noframes>
+
+CONTOH
+
+http://livetogelwla.wapsite.me/indiana-evening
