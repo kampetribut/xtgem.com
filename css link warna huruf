@@ -1,0 +1,35 @@
+<style type="text/css">
+body {
+font-family: arial;
+text-align: justify;
+background-color : #20303d;
+a.link:aqua;
+color : #ffff00;
+font-size:16px;
+font-weight:600;
+	line-height:20px;
+	text-shadow: 0px 3px 0px #000;
+	letter-spacing:1px;
+      }
+</style>
+  <style>
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: aqua;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+</style>
