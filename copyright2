@@ -1,0 +1,3 @@
+<center><font color='aqua'><script language="JavaScript"> Year=new
+Date(); var copyright=Year.getUTCFullYear(); document.write
+  ("Copyright © 2010 - " + copyright); </script></font></center>
