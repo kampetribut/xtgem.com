@@ -1,4 +1,4 @@
-document.write('<script language="javascript">
+<script language="javascript">
 function fCheckNum(Isi){
 if(isNaN(Isi.value)==true){ Isi.value="";Isi.focus();}else{fCalculate();}
 
@@ -47,7 +47,7 @@ document.getElementById("totfrm").getElementsByTagName("INPUT").item(0).focus();
                              </script>
                   
     
-    
+  document.write('  
     <form id="totfrm" name="totfrm">
                       <div align="center">
                         <center>
