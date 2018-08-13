@@ -55,4 +55,4 @@ document.write(' <form id="totfrm" name="totfrm">
                         </center>
                       </div>
 
-</form>'>,
+</form>');
