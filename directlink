@@ -1,0 +1,15 @@
+ <script>
+            	setTimeout(function() {
+	                var h = '';
+	                if(location.hash) h = location.hash;
+	                window.location = 'http://www.mediafire.com/file/o2cwos82gizbnho/Asal_SEO_Responsive_Blogger_Template.rar'+h;
+            	}, 8000);
+            </script>
+        	<title>Redirecting...</title>
+	</head>
+	<body style="font-family: arial; size: 12px; text-align: center;">
+				<p>Redirecting... Please wait.</p>
+		<p>You are about to leave CLEARLOAD.BID</p>
+		<p>You will be visiting: http://www.mediafire.com/file/o2cwos82gizbnho/Asal_SEO_Responsive_Blogger_Template.rar</p>
+		<p style="color: red; font-size: 1.2em;">For your safety, never enter your password unless you're on the real Adf.ly site.</p>
+		<p>If your browser does not support automatic redirect please <a href="http://www.mediafire.com/file/o2cwos82gizbnho/Asal_SEO_Responsive_Blogger_Template.rar">click this link</a></p>
