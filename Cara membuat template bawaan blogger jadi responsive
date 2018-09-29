@@ -2,6 +2,7 @@ Cara membuat template bawaan blogger jadi responsive
 
 Lalu cari kode di bawah ini :
 .post-body img, .post-body .tr-caption-container { padding: $(image.border.large.size); }
+
 Hapus kode tersebut lalu ganti dengan kode di bawah ini :
 .post-body img, .post-body .tr-caption-container {padding: 0;width:auto;max-width:100%;height:auto;}
 
@@ -17,7 +18,7 @@ Cari kode <data:post.body/> (yang kedua)
 Lalu hapus saja kode <data:post.body/> tersebut dan ganti dengan kode di bawah ini :
 <b:if cond='data:blog.pageType != "item"'> <b:if cond='data:blog.pageType != "static_page"'> <div expr:id='"summary" + data:post.id'><data:post.body/></div> <script type='text/javascript'>createSummaryAndThumb("summary<data:post.id/>");</script> <span class='readmore' style='float:right'><a expr:href='data:post.url'>Read More »</a></span></b:if></b:if> <b:if cond='data:blog.pageType == "item"'><data:post.body/></b:if> <b:if cond='data:blog.pageType == "static_page"'><data:post.body/></b:if>
 
-Lalu cari lagi kode </head> dan pasangkan kode berikut ini tepat di atas </head> 
+Pasangkan kode berikut ini tepat di atas </head> 
 
 <script type='text/javascript'> posts_no_thumb_sum = 490; posts_thumb_sum = 400; img_thumb_height = 120; img_thumb_width = 120; </script> <script type='text/javascript'> //<![CDATA[ function removeHtmlTag(strx,chop){ if(strx.indexOf("<")!=-1) { var s = strx.split("<"); for(var i=0;i<s.length;i++){ if(s[i].indexOf(">")!=-1){ s[i] = s[i].substring(s[i].indexOf(">")+1,s[i].length); } } strx = s.join(""); } chop = (chop < strx.length-1) ? chop : strx.length-2; while(strx.charAt(chop-1)!=' ' && strx.indexOf(' ',chop)!=-1) chop++; strx = strx.substring(0,chop-1); return strx+'...'; } function createSummaryAndThumb(pID){ var div = document.getElementById(pID); var imgtag = ""; var img = div.getElementsByTagName("img"); var summ = posts_no_thumb_sum; if(img.length>=1) { imgtag = '<span class="posts-thumb" style="float:left; margin-right: 5px;"><img src="'+img[0].src+'" width="'+img_thumb_width+'px" height="'+img_thumb_height+'px"/></span>'; summ = posts_thumb_sum; } var summary = imgtag + '<div>' + removeHtmlTag(div.innerHTML,summ) + '</div>'; div.innerHTML = summary; } //]]> </script>
 
